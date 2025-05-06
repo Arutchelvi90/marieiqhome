@@ -106,7 +106,7 @@ export default function Home() {
             } as any}
           >
             <h2 className="text-3xl font-bold text-green-800 mb-4">Follow Us</h2>
-            <p className="text-gray-700 max-w-2xl mx-auto">Stay in the loop via <a href="https://linkedin.com/company/10685778" target="_blank" className="text-blue-700 underline">LinkedIn</a> and our YouTube channel. We share behind-the-scenes innovation, insights, and partner stories.</p>
+            <p className="text-gray-700 max-w-2xl mx-auto">Stay in the loop via <a href="https://www.linkedin.com/company/106857787" target="_blank" className="text-blue-700 underline">LinkedIn</a> and our YouTube channel. We share behind-the-scenes innovation, insights, and partner stories.</p>
           </motion.section>
         </Element>
 

@@ -1,5 +1,8 @@
+
+'use client';
 import Head from 'next/head';
 import { Link, Element } from 'react-scroll';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -35,14 +38,30 @@ export default function Home() {
         </section>
 
         <Element name="about">
-          <motion.section className="py-20 px-6 bg-white text-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
+          <motion.section
+            {...{
+              className: "py-20 px-6 bg-white text-center",
+              initial: { opacity: 0 },
+              whileInView: { opacity: 1 },
+              transition: { duration: 0.6 },
+              viewport: { once: true }
+            } as any}
+          >
             <h2 className="text-3xl font-bold text-green-800 mb-4">About MarieIQ</h2>
             <p className="max-w-3xl mx-auto text-gray-700">Founded by a sustainability-driven technologist, MarieIQ merges AI with ocean science to power the future of green logistics. We’re on a mission to make shipping smarter and the planet cleaner.</p>
           </motion.section>
         </Element>
 
         <Element name="product">
-          <motion.section className="py-20 px-6 bg-gray-50 text-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
+          <motion.section
+            {...{
+              className: "py-20 px-6 bg-white text-center",
+              initial: { opacity: 0 },
+              whileInView: { opacity: 1 },
+              transition: { duration: 0.6 },
+              viewport: { once: true }
+            } as any}
+          >
             <h2 className="text-3xl font-bold text-green-800 mb-4">Our Product</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-10">
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
@@ -62,21 +81,45 @@ export default function Home() {
         </Element>
 
         <Element name="events">
-          <motion.section className="py-20 px-6 text-center bg-white" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
+          <motion.section
+            {...{
+              className: "py-20 px-6 bg-white text-center",
+              initial: { opacity: 0 },
+              whileInView: { opacity: 1 },
+              transition: { duration: 0.6 },
+              viewport: { once: true }
+            } as any}
+          >
             <h2 className="text-3xl font-bold text-green-800 mb-4">Upcoming Events</h2>
             <p className="text-gray-700 max-w-2xl mx-auto">Join us at ocean tech summits, sustainability expos, and industry hackathons where we demo our tools and connect with change-makers.</p>
           </motion.section>
         </Element>
 
         <Element name="social">
-          <motion.section className="py-20 px-6 text-center bg-gray-50" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
+          <motion.section
+            {...{
+              className: "py-20 px-6 bg-white text-center",
+              initial: { opacity: 0 },
+              whileInView: { opacity: 1 },
+              transition: { duration: 0.6 },
+              viewport: { once: true }
+            } as any}
+          >
             <h2 className="text-3xl font-bold text-green-800 mb-4">Follow Us</h2>
             <p className="text-gray-700 max-w-2xl mx-auto">Stay in the loop via <a href="https://linkedin.com/company/10685778" target="_blank" className="text-blue-700 underline">LinkedIn</a> and our YouTube channel. We share behind-the-scenes innovation, insights, and partner stories.</p>
           </motion.section>
         </Element>
 
         <Element name="contact">
-          <motion.section className="py-20 px-6 text-center bg-green-100" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
+          <motion.section
+            {...{
+              className: "py-20 px-6 bg-white text-center",
+              initial: { opacity: 0 },
+              whileInView: { opacity: 1 },
+              transition: { duration: 0.6 },
+              viewport: { once: true }
+            } as any}
+          >
             <h2 className="text-3xl font-bold text-green-800 mb-4">Get In Touch</h2>
             <p className="text-gray-700 max-w-xl mx-auto">Let's work together toward a sustainable maritime future. Email us at <a href="mailto:info@marieiq.ai" className="text-blue-700 underline">info@marieiq.ai</a></p>
           </motion.section>
